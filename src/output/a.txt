@@ -1,0 +1,1 @@
+Boş olmasın diye ekledim burayı silebilrisiniz. Eğer src içinde output diye klasör olmazsa çalışmaz.
