@@ -33,19 +33,6 @@ module.exports = {
     }
 };
 
-const getSpeech = async (text) => {
-    try {
-        const response = await axios.get(
-            `https://app.cortex.fun/api/speech?key=demo&soru=${encodeURIComponent(text)}&cinsiyet=erkek`,
-            { responseType: 'arraybuffer' }
-        );
-        return response.data;
-    } catch (error) {
-        console.log(error);
-        throw new Error("Ses dönüştürme işlemi başarısız oldu.");
-    }
-};
-
 const generateRandomString = () => {
     const chars = "0123456789";
     let randomString = '';
