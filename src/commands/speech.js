@@ -19,7 +19,7 @@ module.exports = {
                 slow: false
             });
 
-            const outputPath = `./output/${generateRandomString()}.mp3`;
+            const outputPath = `./src/output/${generateRandomString()}.mp3`;
 
             const response = await axios.get(audioUrl, { responseType: 'arraybuffer' });
             fs.writeFileSync(outputPath, response.data, 'binary');
