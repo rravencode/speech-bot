@@ -1,0 +1,12 @@
+{
+  "name": "speech-bot",
+  "description": "Raven sunucu için yapılmış yazıyı sese dönüştürme botu altyapısı.",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "axios": "^1.4.0",
+    "discord.js": "^14.11.0",
+    "google-tts-api": "^2.0.2"
+  }
+}
